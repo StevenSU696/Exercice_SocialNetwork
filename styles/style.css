@@ -1,0 +1,206 @@
+/* GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;*/
+    margin: 0;
+}
+
+h1 {
+    /*margin-bottom: 30px;*/
+}
+
+
+/* NAVIGATION */
+nav {
+    background-color: #007BFF;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #e5a9d9;
+    color: black;
+    /* Couleur fond / texte au survol */
+}
+
+/* FOOTER */
+footer {
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* FORMULAIRE CONNEXION / INSCRIPTION */
+.form-container,
+.inscription-container {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ALIGNEMENT DES LABELS ET DES CHAMPS */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    /* label au-dessus du champ */
+    align-items: flex-start;
+    /* Aligner label champ à gauche */
+    margin-top: 15px;
+    width: 100%;
+    /* champ occupe toute la largeur */
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    /* Aligner texte label à gauche */
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    /* champs sur toute la largeur */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contenu {
+    width: 90%;
+    margin: 10px;
+}
+
+.date_publication {
+    width: 90%;
+    margin: 10px;
+    height: 20px;
+}
+
+/* STYLES DES BOUTONS */
+.submit {
+    display: block;
+    width: 100%;
+    /* boutons sur toute la largeur */
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.submit:hover {
+    background-color: #e5a9d9;
+    color: black;
+    /* Couleur fond / texte au survol */
+}
+
+/*LIEN LOGIN SUR LA PAGE LOGOUT*/
+
+.inline {
+    display: inline;
+    padding: 15px;
+}
+
+
+/*MESSAGES ERREURS*/
+.text-danger {
+    color: red;
+}
+
+/*PAGE UTILISATEURS*/
+
+.table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    ;
+}
+
+.table th,
+.table td {
+    border: 3px solid #e0f7fa;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+/* DESKTOP : supérieur à 1024 pixels */
+@media (min-width: 1024px) {
+
+    .form-container,
+    .inscription-container {
+        width: 400px;
+    }
+}
+
+/* TABLETTE : entre 600 et 1024 pixels */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .form-container,
+    .inscription-container {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+/* MOBILE : entre 320 et 600 pixels */
+@media (min-width: 320px) and (max-width: 600px) {
+
+    .form-container,
+    .inscription-container {
+        width: 90%;
+    }
+}
