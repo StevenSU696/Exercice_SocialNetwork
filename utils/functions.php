@@ -13,6 +13,7 @@
 //la fonction peut accéder à la BDD sans avoir besoin
 //de créer une nouvelle connexion
 
+//Eviter les echo dans les fonctions
 function afficher_Utilisateurs($mysqlClient)
 {
     //connexion BDD et affichage
